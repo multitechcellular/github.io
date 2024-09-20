@@ -277,7 +277,12 @@ h6,
         left: 0;
         z-index: 999;
     }
-    
+    .moto {
+        margin-top: -100px;
+    }
+    .slider {
+        margin-top: -100px;
+    }
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
