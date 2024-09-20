@@ -2,323 +2,697 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/logo-min.ico" type="image/x-icon">
-
-    <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
+    <meta charset="utf-8">
     <title>Multitech Cellular</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="/" class="nav__logo">
-                <img src="assets/img/logo-min.ico" alt="">
-                <p>Multitech</p>
-            </a>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="/" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#specs" class="nav__link">Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#case" class="nav__link">Teknisi</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#products" class="nav__link">Pricing</a>
-                    </li>
-                </ul>
 
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">Multitech</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#feature" class="nav-item nav-link">Services</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#review" class="nav-item nav-link">Review</a>
+                        <a href="#contact" class="nav-item nav-link">Lokasi</a>
+                    </div>
+                    <a href="https://wa.me/6285353075678"
+                        class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">More
+                        Info</a>
                 </div>
-            </div>
+            </nav>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div>
-                    <img src="assets/img/beranda.png" alt="" class="home__img">
-                </div>
-
-                <div class="home__data">
-                    <div class="home__header">
-                        <h1 class="home__title">Service</h1>
-                        <h2 class="home__subtitle">Smartphone</h2>
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Kepuasan Anda adalah Prioritas kami dalam
+                                bekerja</h1>
+                            <p class="text-white pb-3 animated slideInDown">Melayani perbaikan segala macam kerusakan
+                                HP, baik Software maupun Hardware. Seperti Flashing, Lupa pola-sandi, Bootloop, Unlock,
+                                Ganti LCD, Batre, Konektor Charger, dll.</p>
+                            <a href="#pricing"
+                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Price</a>
+                            <a href=""
+                                class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Hubungi
+                                Kami</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="home__footer">
-                        <h3 class="home__title-description">Overview</h3>
-                        <p class="home__description">Melayani perbaikan segala macam kerusakan HP, baik Software maupun
-                            Hardware. Seperti Flash, Lupa pola/sandi, Bootloop, Unlock, Ganti LCD, Batre, Konektor
-                            Charger, dll.
-                        </p>
-                        <a href="https://wa.me/6285353075678" class="button button--flex">
-                            <span class="button--flex">
-                                <i class="ri-whatsapp-line"></i>Hubungi Kami
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SPONSOR ===============-->
-        <!-- <section class="sponsor section">
-            <div class="sponsor__container container grid">
-                <img src="assets/img/sponsor1.png" alt="" class="sponsor__img">
-                <img src="assets/img/sponsor2.png" alt="" class="sponsor__img">
-                <img src="assets/img/sponsor3.png" alt="" class="sponsor__img">
-                <img src="assets/img/sponsor4.png" alt="" class="sponsor__img">
-            </div>
-        </section> -->
-
-        <!--=============== SPECS ===============-->
-        <section class="specs section grid" id="specs">
-            <h2 class="section__title section__title-gradient">Melayani</h2>
-
-            <div class="specs__container container grid">
-                <div class="specs__content grid">
-                    <div class="specs__data">
-                        <i class="ri-smartphone-line"></i>
-                        <h3 class="specs__title">Software</h3>
-                        <span class="specs__subtitle">Flash, Lupa Pola, Sandi, Akun</span>
-                    </div>
-
-                    <div class="specs__data">
-                        <i class="ri-battery-charge-line specs__icon"></i>
-                        <h3 class="specs__title">Battery</h3>
-                        <span class="specs__subtitle">Ganti Baterai</span>
-                    </div>
-
-                    <div class="specs__data">
-                        <i class="ri-plug-line specs__icon"></i>
-                        <h3 class="specs__title">Konektor</h3>
-                        <span class="specs__subtitle">Ganti Konektor Charger</span>
-                    </div>
-
-                    <div class="specs__data">
-                        <i class="ri-smartphone-fill"></i>
-                        <h3 class="specs__title">LCD</h3>
-                        <span class="specs__subtitle">Ganti LCD Semua Merk</span>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/img/phone.png" alt="" class="specs__img">
-                </div>
-            </div>
-        </section>
-
-        <!--=============== CASE ===============-->
-        <section class="case section grid" id="case">
-            <h2 class="section__title section__title-gradient">Teknisi</h2>
-
-            <div class="case__container container grid">
-                <div>
-                    <img src="assets/img/teknisi.png" alt="" class="case__img">
-                </div>
-
-                <div class="case__data">
-                    <p class="case__description">Dikerjakan oleh teknisi berpengalaman. Mengutamakan kualitas dan hasil yang terbaik.
-                    </p>
-                    <a href="https://wa.me/6285353075678" class="button button--flex">
-                        <i class="ri-information-line button__icon"></i> More info
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== DISCOUNT ===============-->
-        <section class="discount section">
-            <div class="discount__container container grid">
-                <div class="discount__animate">
-                    <h2 class="discount__title">Perbaikan ponsel <br> yang cepat dan andal.</h2>
-                    <p class="discount__description">Kepuasan Anda adalah Prioritas kami.</p>
-                    <a href="https://wa.me/6285353075678" class="button button--flex">
-                        <i class="ri-whatsapp-line"></i> Info Lebih Lanjut
-                    </a>
-                </div>
-
-                <img src="assets/img/services.png" alt="" class="discount__img">
-            </div>
-        </section>
-
-        <!--=============== PRODUCTS ===============-->
-        <section class="products section" id="products">
-            <h2 class="section__title section__title-gradient products__line">
-                Harga <br> Servis
-            </h2>
-
-            <div class="products__container container grid">
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/lcd.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Ganti LCD</h3>
-                        <span class="products__price">Rp 300.000</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/konektor.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Konektor Cas</h3>
-                        <span class="products__price">Rp 50.000</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/flash.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Flash</h3>
-                        <span class="products__price">Rp 50.000</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/signal.png" alt="" class="products__img">
-
-                        <h3 class="products__title">No Sinyal</h3>
-                        <span class="products__price">Rp 250.000</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/baterai.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Ganti Baterai</h3>
-                        <span class="products__price">Rp 200.000</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <a href="#" class="footer__logo">
-                <img src="assets/img/logo-min.ico" alt=""> 
-            </a>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Services</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Ganti LCD</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Ganti Baterai</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Unlock Pola, Sandi, Frp</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Flash, Bootloop</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Teknisi</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Profesional</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Cepat</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Bisa Ditunggu</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Berpengalaman</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <form action="" class="footer__form">
-                    <input type="email" placeholder="Email" class="footer__input">
-                    <button class="button button--flex">
-                        <i class="ri-send-plane-line button__icon"></i> Subscribe
-                    </button>
-                </form>
-
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-twitter-line"></i>
-                    </a>
                 </div>
             </div>
         </div>
+        <!-- Navbar & Hero End -->
 
-        <p class="footer__copy">
-            <a href="/" target="_blank" class="footer__copy-link">&#169; Multitech Cellular.
-                All right reserved</a>
-        </p>
-    </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-s-line scrollup__icon"></i>
-    </a>
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">About</h5>
+                        <h1 class="mb-4">Multitech Cellular</h1>
+                        <p class="mb-4">Perbaikan ponsel yang cepat dan andal. Dikerjakan oleh teknisi berpengalaman.
+                            Mengutamakan kualitas dan hasil yang terbaik, dan telah dibuktikan oleh banyak pelanggan.
+                        </p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">10.000</h2>
+                                        <p class="text-primary-gradient mb-0">Langganan +</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">2000</h2>
+                                        <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6285353075678"
+                            class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Kontak
+                            kami</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Services</h5>
+                    <h1 class="mb-5">Pilihan Layanan</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-phone-fill text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Ganti Lcd</h5>
+                            <p class="m-0">Ganti LCD semua merk dan type HP Android. Dikerjakan teknisi ahli yang
+                                berpengalaman. Pemasangan rapih dan bersih</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-battery-charging text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Ganti Baterai</h5>
+                            <p class="m-0">Ganti baterai untuk semua merk dan type HP Android. Pilihan ada 2 jenis,
+                                baterai standar dan jenis baterai double power.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-lightning-charge-fill text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Ganti Konektor Charger</h5>
+                            <p class="m-0">Ganti konektor untuk semua merk dan type HP Android. Dikerjakan teknisi
+                                profesional berpengalaman dan Bergaransi. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-phone-vibrate-fill text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Flashing</h5>
+                            <p class="m-0">Pengerjaan proses flashing dilakukan untuk devices yang mengalami bootloop,
+                                error sistim, atau kepenuhan memori. Bisa juga dilakukan untuk update perangkat lunak
+                                terbaru.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-unlock-fill text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Unlock</h5>
+                            <p class="m-0">Unlock atau buka kunci perangkat. Seperti lupa pola, sandi, atau kehilangan
+                                akses ke akun google. Untuk proses unlock ini bisa menghubungi teknisi terlebih dahulu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-reception-4 text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Perbaikan Signal</h5>
+                            <p class="m-0">Perbaikan masalah no signal, khusus untuk merk dan type HP Android. Biasanya
+                                dilakukan penggantian IC signal. Ada beberapa jenis ic seperti ic sdr, wtr, atau ic rf.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Bagaimana Kami Bekerja</h5>
+                    <h1 class="mb-5">3 Langkah Mudah</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
+                                <i class="bi bi-telephone-fill fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Hubungi Kami</h5>
+                            <p class="mb-0">Anda bisa menghubungi kami, lewat link whatsapp yang tersedia. Bisa juga
+                                mengirim pesan singkat atau melalui email</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
+                                <i class="bi bi-geo-alt-fill fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Datang ke Lokasi</h5>
+                            <p class="mb-0">Anda bisa langsung datang ke gerai servis kami untuk mendiskusikan
+                                penanganan terbaik bagi Smarthphone anda yang bermasalah.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Masalah ditangani Teknisi</h5>
+                            <p class="mb-0">Setelah sepakat untuk dilakukan perbaikan, teknisi selanjutnya akan mulai
+                                memperbaiki perangkat Anda sesuai kerusakan yang dikeluhkan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Waktu Pengerjaan</h5>
+                        <h1 class="mb-4">Waktu bisa bervariasi Tergantung Kerusakan</h1>
+                        <p class="mb-4">Untuk beberapa kerusakan ringan seperti flashing, unlock, ganti konektor
+                            charger, spiker, mic, dll. Perbaikan-perbaikan tersebut bisa ditunggu di tempat. Tetapi
+                            untuk kerusakan yang cukup berat seperti ganti lcd, batre, ganti Ic. Mungkin akan dibutuhkan
+                            beberapa hari kerja.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="/" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fa fa-shield-alt fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">100%</p>
+                                        <h5 class="text-white mb-0">Bergaransi</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Pricing</h5>
+                    <h1 class="mb-5">Daftar Harga Servis Item</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul
+                        class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Software</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Hardware</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Flashing</h4>
+                                            <span>Bootloop & Update firmware</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">Rp</small>50.000<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Devices</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Firmware
+                                                    terbaru</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Gratis buat
+                                                    akun</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Gratis Backup
+                                                    data</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Bergaransi</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="https://wa.me/6285353075678"
+                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Hubungi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Unlock</h4>
+                                            <span>Lupa Pola, Sandi & Lupa akun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">Rp</small>150.000<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Devices</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Khusus
+                                                    Android</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Update
+                                                    terbaru</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Gratis buat
+                                                    akun</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Bergaransi</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="https://wa.me/6285353075678"
+                                                class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Hubungi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Special Backup</h4>
+                                            <span>Data Whatsapp & Data Photo dan Video</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">Rp</small>100.000<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Devices</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Backup Data</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Restore Data</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Pindah Data</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Free
+                                                    Konsultasi</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="https://wa.me/6285353075678"
+                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Hubungi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Ganti LCD</h4>
+                                            <span>Cepat & Rapih</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">Rp</small>300.000<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Devices</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>LCD Baru</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Pengerjaan
+                                                    cepat</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Harga
+                                                    terjangkau</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Free
+                                                    Konsultasi</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="https://wa.me/6285353075678"
+                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Hubungi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Ganti Baterai</h4>
+                                            <span>Standar & Double Power</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">Rp</small>200.000<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Devices</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Baterai baru</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Standar</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Double power</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Free Clean</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="https://wa.me/6285353075678"
+                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Hubungi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Ganti Konektor Charger</h4>
+                                            <span>New Part & Tahan Lama</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">Rp</small>50.000<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Devices</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Konektor
+                                                    Baru</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bisa
+                                                    ditunggu</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Tahan Lama</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Free
+                                                    Konsultasi</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="https://wa.me/6285353075678"
+                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Hubungi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
+                    <h1 class="mb-5">Apa Komentar Pelanggan!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Teten</h5>
+                                <p class="mb-1">Wiraswasta</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya ke Multitech Cellular udah langanan mas, servisnya oke kalo menurut saya.
+                            Kalo nyerpis HP saya kesini terus.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Ockindra</h5>
+                                <p class="mb-1">Karyawan</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Kalo udah jelas oke, ngapain spekulasi cari tempat servis lain. Toh harganya
+                            juga terjangkau dan bersahabat ko.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Syam Oz</h5>
+                                <p class="mb-1">PNS</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Udah langganan dari dulu di Multitech Cellular. Teknisinya oke, apapun
+                            masalahnya selalu bisa di konsultasikan dulu.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Dewi Suciati</h5>
+                                <p class="mb-1">Housewife</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Saya setiap servis HP selalu di Multitech Cellular, hasilnya selalu memuaskan.
+                            Udah gitu abangnya baik enak diajak ngomong.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Maps</h5>
+                    <h1 class="mb-5">Lokasi Kami!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="row g-3">
+                                <div class="col-12 text-center">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.6003323580903!2d110.31321287455299!3d-7.725957376560342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af60e2dabed63%3A0x1927a14dc56e3582!2sMultitech%20Cellular!5e0!3m2!1sen!2sid!4v1726071175860!5m2!1sen!2sid"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                        class="map">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-10 col-lg-5">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Jl. Kebon Agung, Margomulyo, Seyegan, Sleman,
+                            Yogyakarta 55561</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>0853-5307-5678</p>
+                        <p><i class="fa fa-envelope me-3"></i>multitechcellular@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-lg-5">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="#about">About Us</a>
+                        <a class="btn btn-link" href="https://wa.me/6285353075678">Contact Us</a>
+                        <a class="btn btn-link" href="/">Career</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="/">2024 Multitech Cellular</a>.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="/">Home</a>
+                                <a href="/">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
