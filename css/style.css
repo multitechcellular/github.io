@@ -230,7 +230,43 @@ h6,
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
-    
+    .kepala {
+        margin-top: 5px;
+    }
+    .map {
+        width: 600px;
+        height: 450px;
+        }
+        .layanan {
+            margin-top: 200px;
+        }
+        .harga {
+            margin-top: 200px;
+            margin-bottom: -300px;
+        }
+        .testimo {
+            margin-top: 200px;
+            margin-bottom: -300px;
+        }
+        .peta {
+            margin-top: 200px;
+            margin-bottom: -200px;
+        }
+        .flashing {
+            margin-top: -20px;
+        }
+        .digawe {
+            margin-bottom: -300px;
+        }
+        .bekerja {
+            margin-bottom: -300px;
+        }
+        .kampret {
+            margin-top: 1px;
+        }
+        .tentang {
+            margin-bottom: -300px;
+        }
 }
 
 @media (min-width: 992px) {
