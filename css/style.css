@@ -230,22 +230,7 @@ h6,
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
-    .map {
-        width: 600px;
-        height: 450px;
-        }
-        .layanan {
-            margin-top: 200px;
-        }
-        .harga {
-            margin-top: 200px;
-        }
-        .testimo {
-            margin-top: 200px;
-        }
-        .peta {
-            margin-top: 200px;
-        }
+    
 }
 
 @media (min-width: 992px) {
